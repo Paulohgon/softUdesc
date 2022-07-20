@@ -4,15 +4,10 @@ class TestClass:
 
     def test(self):
         question = perguntas("qual seu nome ",2)
-        respostaa = resposta({"qual seu nome ":True},"paulogaraio")
+        respostaa = resposta({"qual seu nome":True},"paulo")
 
-        #question.addresposta("bom dia")
 
-        
-        assert respostaa.getrespostacerta("qual seu nome") == "paulo"
+        testa=respostaa.getrespostacerta("qual seu nome")
+        print(testa)
+        assert  testa== "paulo"
 
-# question = perguntas("qual seu nome caralho",2)
-# respostaa = resposta({"qual seu nome caralho":True},"paulogaraio")
-
-# question.addresposta("bom dia")
-# respostaa.getrespostacerta("qual seu nome caralho")
