@@ -30,3 +30,7 @@ class professor(usuario):
         for sala in self.salas:
             if sala.getnomesala()==nomesala:
                 sala.addaluno(alunos)
+    def removealunosala(self,nomesala,alunos):
+        for sala in self.salas:
+            if sala.getnomesala()==nomesala:
+                sala.removealuno(alunos)
