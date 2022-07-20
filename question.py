@@ -18,7 +18,8 @@ class perguntas:
         print(self.respostaa)
     def getpontos(self):
         return self.pontos
-
+    def getenunciado(self):
+        return self.enunciado
     
 class resposta:
     def __init__(self,certo,texto):

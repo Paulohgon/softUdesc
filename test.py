@@ -20,3 +20,10 @@ class TestClass:
             maispontos = question.getpontos()
             aluno.addpontos(maispontos)
             assert aluno.getpontos() == 2
+    def test3(self):
+        respostaa = resposta({"qual a capital da amazonia":True},"ratanaba")
+        question = perguntas("qual a capital da amazonia",2)
+
+        correta = respostaa.getrespostacerta(question.getenunciado())
+        
+        assert correta == "ratanaba"
