@@ -16,6 +16,8 @@ class perguntas:
     def getresposta(self,enunciado):
         self.respostaa = resposta.getrespostacerta(enunciado)
         print(self.respostaa)
+    def getpontos(self):
+        return self.pontos
 
     
 class resposta:
