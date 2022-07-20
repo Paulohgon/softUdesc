@@ -19,6 +19,3 @@ class professor(usuario):
     def __init__(self,historico,nomeInst):
         self.historico = historico
         self.instituicao=nomeInst
-class user(usuario):
-    def __init__(self, name, email, sexo, idade):
-        super().__init__(name, email, sexo, idade)
