@@ -16,10 +16,10 @@ class TestClass:
         respostaa = resposta({"qual a capital da amazonia":True},"ratanaba")
         question = perguntas("qual a capital da amazonia",2)
         aluno = estudante("paulo","paulo@paulo","masculo","30",0,"")
-        if respostaa.getrespostacerta("qual a capital da amazonia")=='ranaba':
+        if respostaa.getrespostacerta("qual a capital da amazonia")=='ratanaba':
             maispontos = question.getpontos()
             aluno.addpontos(maispontos)
-            assert aluno.getpontos() == 2
+        assert aluno.getpontos() == 2
     def test3(self):
         respostaa = resposta({"qual a capital da amazonia":True},"ratanaba")
         question = perguntas("qual a capital da amazonia",2)
