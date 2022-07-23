@@ -16,6 +16,11 @@ class estudante(usuario):
         self.pontos = self.pontos+pontos
     def getpontos(self):
         return self.pontos
+    def addhistorico(self,pergunta):
+        self.historico.append(pergunta)
+        return self.historico
+    def gethistorico(self):
+        return self.historico
 class professor(usuario):
     def __init__(self,name, email, sexo, idade,formacao,nomeInst):
         super().__init__(name, email, sexo, idade)
