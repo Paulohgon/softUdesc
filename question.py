@@ -37,12 +37,6 @@ class resposta:
             if pergunta == enunciado:
                 if self.certo[pergunta]==True:
                     return self.texto
-    def getrespostaerrada(self,enunciado):
-        count = 0
-        for resposta in self.certo:
-            if resposta == enunciado:
-                if self.certo[resposta]==True:
-                    return resposta
     def setresposta(self,certo,texto):
         return resposta(texto,certo)
     def getresposta(self):
